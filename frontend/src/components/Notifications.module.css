@@ -1,0 +1,123 @@
+
+
+.notifications {
+  position: fixed;
+  top: 0;
+   width: 300px;
+  right: -100%; 
+  height: 100%; 
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  z-index: 1000;
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.notifications.open {
+  right: 0; 
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+  
+}
+
+.header h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.closeButton {
+  background: none;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  background-color: black;
+  color: white;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.empty {
+  text-align: center;
+  color: #999;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .notifications {
+    width: 300px; 
+    right: -360px; 
+  }
+
+  .notifications.open {
+    right: 0; 
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .notifications {
+    width: 320px; 
+    right: -360px; 
+  }
+
+  .notifications.open {
+    right: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .notifications {
+    width: 400px; 
+    right: -440px; 
+  }
+
+  .notifications.open {
+    right: 0;
+  }
+
+
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+  
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+ 
+}
+
+@media (min-width: 1921px) {
+  
+}
+
+

@@ -1,0 +1,338 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+  }
+  
+  .slider {
+    position: relative;
+    width: 1200px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .sliderWrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .sliderContainer {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .container_imagem {
+    width: 1200px;
+    height: 400px;
+    flex-shrink: 0;
+  }
+
+  .containerImgSlider {
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .prevButton,
+  .nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px;
+  }
+  
+  .prevButton {
+    left: 10px;
+  }
+  
+  .nextButton {
+    right: 10px;
+  }
+  
+  .prevButton:hover,
+  .nextButton:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+ 
+  .spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid black;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
+@media (min-width: 320px) and (max-width: 480px) {
+   
+  .slider {
+    position: relative;
+    width: 322px;
+    overflow: hidden;
+    margin-bottom: 6px;
+  }
+  
+  .sliderWrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .sliderContainer {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .container_imagem {
+    width: 322px;
+    height: 108px;
+    flex-shrink: 0;
+  }
+
+  .containerImgSlider {
+    width: 322px;
+    height: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .prevButton,
+  .nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 11px;
+    cursor: pointer;
+    z-index: 1;
+    padding: 4px;
+  }
+  
+  .prevButton {
+    left: 10px;
+  }
+  
+  .nextButton {
+    right: 10px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .slider {
+    position: relative;
+    width: 474px;
+    overflow: hidden;
+    margin-bottom: 9px;
+  }
+  
+  .sliderWrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .sliderContainer {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .container_imagem {
+    width: 474px;
+    height: 158px;
+    flex-shrink: 0;
+  }
+
+  .containerImgSlider {
+    width: 474px;
+    height: 158px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .prevButton,
+  .nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 11px;
+    cursor: pointer;
+    z-index: 1;
+    padding: 4px;
+  }
+  
+  .prevButton {
+    left: 10px;
+  }
+  
+  .nextButton {
+    right: 10px;
+  }
+
+
+}
+ 
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .slider {
+    position: relative;
+    width: 765px;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+  
+  .sliderWrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .sliderContainer {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .container_imagem {
+    width: 765px;
+    height: 255px;
+    flex-shrink: 0;
+  }
+
+  .containerImgSlider {
+    width: 765px;
+    height: 255px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .prevButton,
+  .nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 1;
+    padding: 6px;
+  }
+  
+  .prevButton {
+    left: 10px;
+  }
+  
+  .nextButton {
+    right: 10px;
+  }
+
+
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  .slider {
+    position: relative;
+    width: 1020px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .sliderWrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .sliderContainer {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .container_imagem {
+    width: 1020px;
+    height: 340px;
+    flex-shrink: 0;
+  }
+
+  .containerImgSlider {
+    width: 1020px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .prevButton,
+  .nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px;
+  }
+  
+  .prevButton {
+    left: 10px;
+  }
+  
+  .nextButton {
+    right: 10px;
+  }
+
+}
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+ 
+}
+
+@media (min-width: 1921px) {
+  
+}
+
+  
+
+  

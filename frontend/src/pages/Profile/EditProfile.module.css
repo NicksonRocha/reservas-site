@@ -1,0 +1,108 @@
+.fullContainer {
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cosmosContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  margin-top: 10px;
+  max-width: 400px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.galaxyForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%; 
+  position: relative; 
+}
+
+.lunaticLabel {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.satelliteInput {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.spaceshipButton {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border: 1px solid black;
+}
+
+.spaceshipButton:hover {
+  background-color: white;
+  color: black;
+}
+
+.warningMessage {
+  color: red;
+  margin-top: 8px;
+}
+
+.victoryMessage {
+  color: green;
+  margin-top: 8px;
+}
+
+.popup {
+  position: absolute; 
+  top: calc(100% + 10px); 
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  z-index: 1000;
+  max-width: 90%;
+}
+
+.popup-error {
+  background-color: red;
+}
+
+.popup-success {
+  background-color: green;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

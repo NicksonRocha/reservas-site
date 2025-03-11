@@ -1,0 +1,136 @@
+
+.sliderContainer {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; 
+    overflow: hidden;
+}
+
+.sliderImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+.sliderButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 2;
+}
+
+.sliderButton:first-of-type {
+    left: 10px;
+}
+
+.sliderButton:last-of-type {
+    right: 10px;
+}
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid #f3f3f3; 
+    border-top: 4px solid black; 
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+  
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .sliderContainer {
+      max-width: 114px;
+      padding-top: 114px; 
+    }
+  
+    .sliderImage {
+      border-radius: 6px;
+    }
+  
+    .sliderButton {    
+      padding: 4px;
+      font-size: 12px;
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    .sliderContainer {
+      max-width: 142px;
+      padding-top: 142px;
+    }
+  
+    .sliderImage {
+      border-radius: 6px;
+    }
+  
+    .sliderButton {
+      padding: 4px;
+      font-size: 12px;
+    }
+  }
+   
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .sliderContainer {
+      max-width: 178px;
+      padding-top: 178px;
+    }
+  
+    .sliderImage {
+      border-radius: 10px;
+    }
+  
+    .sliderButton {
+      padding: 6px;
+      font-size: 12px;
+    }
+  }
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .sliderContainer {
+      max-width: 238px;
+      padding-top: 238px;
+    }
+  
+    .sliderImage {
+      border-radius: 10px;
+    }
+  
+    .sliderButton {
+      padding: 8px;
+      font-size: 17px;
+    }
+  }
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+  
+
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+ 
+}
+
+@media (min-width: 1921px) {
+ 
+}
+

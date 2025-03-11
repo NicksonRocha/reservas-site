@@ -1,0 +1,94 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.h2_business {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.errorMessage {
+  color: red;
+  margin: 10px 0;
+}
+
+.successMessage {
+  color: green;
+  margin: 10px 0;
+}
+
+.form_register {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.label_register {
+  font-weight: bold;
+  color: black;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="file"] {
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btn_register {
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.btn_register:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.btn_register:not(:disabled):hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.imagePreviewContainer {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.imagePreview {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.select_register {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

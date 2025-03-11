@@ -1,0 +1,75 @@
+.error_message {
+    color: red;
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #f5c6cb;
+    
+  }
+  
+  .formcontainer {
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    width: 350px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+     
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+  }
+  
+  .ordem {
+    font-size: 1.3em;
+    align-self: flex-start;
+    margin-bottom: 10px; 
+  }
+  
+  .ynput {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1.5px solid rgb(193, 193, 193);
+    margin-bottom: 10px; 
+  }
+  
+  .button {
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid transparent;
+  }
+
+  .button:hover {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+  }
+
+  .link {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 3px;
+  }
+  .link:hover {
+    background-color: black;
+    color: white;
+  }

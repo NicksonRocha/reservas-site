@@ -1,0 +1,153 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .box {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .profileImageWrapper {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profileImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .editButton {
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    background-color: black;
+    color: white;
+    padding: 8px 15px;
+    font-size: 0.9em;
+    border: 1px solid black;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition:  0.3s ;
+    text-decoration: none;
+  }
+
+  .deleteButton {
+    position: absolute;
+    bottom: 0px;
+    right: 10px; 
+    background-color: black;
+    color: white;
+    padding: 8px 15px;
+    font-size: 0.9em;
+    border: 1px solid black;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition:  0.3s ;
+    text-decoration: none;
+  }
+  
+  
+  
+  .editButton:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+  
+  .userInfo {
+    text-align: center;
+  }
+  
+  .userName {
+    font-size: 2em;
+    color: #333;
+    margin: 0;
+  }
+  
+  .userEmail {
+    font-size: 1em;
+    color: #666;
+  }
+
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.modal p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.modalActions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.cancelButton, .confirmButton {
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cancelButton {
+    background: #ccc;
+    border: 1px solid #999;
+}
+
+.cancelButton:hover {
+    background: #bbb;
+}
+
+.confirmButton {
+    background: red;
+    color: white;
+    border: none;
+}
+
+.confirmButton:hover {
+    background: darkred;
+}
+
+  

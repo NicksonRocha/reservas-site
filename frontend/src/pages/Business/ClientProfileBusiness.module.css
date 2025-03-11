@@ -1,0 +1,1550 @@
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .name_info {
+    overflow: hidden; 
+      white-space: nowrap; 
+      text-overflow: ellipsis; 
+  }
+  
+  
+  .box_change {
+    background-color: white;
+    color: red;
+  }
+  
+  .sup_buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .back_link {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid black;
+  }
+  
+  .back_link:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .edit_buttons  {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .edit_buttons:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .head_profile {
+    display: flex;
+    position: relative; 
+  }
+  
+  .profileImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .name_info {
+    font-size: 3.5em;
+  }
+  
+  .business_info {
+    margin-left: 20px;
+  }
+  
+  .business-info p {
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  .create-product-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .containerImgProfile {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .containerImgProduct {
+    width: 280px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .imageProduct {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  
+  .h2_album {
+    font-size: 1.5em;
+    color: white;
+    align-items: center;
+    margin-left: 10px ;
+  }
+  
+  .album_title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+    height: 50px;
+  }
+  
+  .btn_change {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right:  10px;
+    cursor: pointer;
+  }
+  .btn_change:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .btn_delete {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right:  10px;
+    cursor: pointer;
+  }
+  .btn_delete:hover {
+    background-color: red;
+    color: white;
+  }
+  
+  .box_albums {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+  }
+  
+  
+  .box_album {
+    display: flex;
+    flex-direction: column; 
+    width: 100%; 
+  }
+
+  .box_products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    margin-left: 0px; 
+    
+  }
+  
+  .box_products_2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    margin-left: 0px; 
+    background-color: red;
+    justify-content: space-between;
+  }
+  
+  .box_product {
+    text-align: left;
+    border: 1px solid transparent;
+    width: 280px;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+  }
+  
+  .box_product:hover {
+    border: 1px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.295);
+  }
+  
+  
+  
+  .info_product {
+    font-size: 18px;
+    margin-left: 10px;
+    color: black;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+  }
+  
+  .title {
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+  }
+  
+  .link_product {
+    text-decoration: none;
+  }
+  
+  .bellImg {
+    width: 27px;
+  } 
+  
+  .bellNotification {
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+  }
+  
+  .bellNotification:hover {
+    color: white;
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    60% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .bellNotification img {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .bellNotification:hover img {
+    animation: shake 1s ease-in-out;
+  }
+  
+  .notificationsWrapper {
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .notificationBadge {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    background-color: red;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bolder;
+    padding: 2px 2px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+   
+   .spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid #f3f3f3; 
+    border-top: 4px solid black; 
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    animation: spin 1s linear infinite;
+  }
+  
+  
+  @keyframes spin {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
+  .iconGear {
+    width: 27px;
+  }
+  
+  @keyframes rotate360x2 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(720deg); 
+    }
+  }
+  
+  .iconGearButton:hover .iconGear {
+    animation: rotate360x2 1s ease-in-out; 
+  }
+  
+  .iconGearButton {
+    background-color: white;
+    position: absolute; 
+    bottom: 50px; 
+    right: 10px; 
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+  }
+  
+  .boxPrice {
+    display: flex;
+    align-items: center;
+  }
+  
+  .priceOriginal {
+    font-size: 1em; 
+    color: gray;
+    text-decoration: line-through; 
+    margin-right: 10px;
+  }
+  
+  .pricePromotion {
+    font-size: 1.3em; 
+    color: orange; 
+    font-weight: bold;
+  }
+  
+   @media (min-width: 320px) and (max-width: 480px) {
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .box_change {
+      background-color: white;
+      color: red;
+    }
+    
+    .sup_buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .back_link {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 5px 10px;
+      background-color: white;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      border: 1px solid black;
+    }
+    
+    .back_link:hover {
+      background-color: black;
+      color: white;
+    }
+    
+    .edit_buttons  {
+      display: inline-block;
+      padding: 5px 10px;
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    
+    .edit_buttons:hover {
+      background-color: white;
+      color: black;
+    }
+    
+    .head_profile {
+      display: flex;
+      position: relative; 
+      
+    }
+    
+    .profileImage {
+      width: 100px;
+      height: 100px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 10px;
+      object-fit: cover;
+      object-position: center;
+    }
+    
+    .name_info {
+      font-size: 1.5em;
+    }
+    
+    .business_info {
+      margin-left: 10px;
+      height: 100px;  
+      width: 150px;
+    }
+    
+    .business_info p {
+      margin: 5px 0;
+      font-size: 0.8em;
+      line-height: 1.5;
+      color: #000000;
+    }
+    
+    .create-product-section {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    
+    .containerImgProfile {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    
+    .containerImgProduct {
+      width: 150px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    
+    .imageProduct {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    
+    .h2_album {
+      font-size: 1em;
+      color: white;
+      margin-left: 10px;
+      margin: 0;  
+    }
+    
+    .album_title {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+      border-radius: 10px;
+      height: 40px;
+      padding-left: 10px;
+      overflow: hidden; 
+      white-space: nowrap; 
+      text-overflow: ellipsis; 
+    }
+    
+    .btn_change {
+      background-color: black;
+      border: 1px solid white;
+      color: white;
+      padding: 3px;
+      border-radius: 5px;
+      margin-right:  10px;
+      cursor: pointer;
+    }
+    .btn_change:hover {
+      background-color: white;
+      color: black;
+    }
+    
+    .btn_delete {
+      background-color: black;
+      border: 1px solid white;
+      color: white;
+      padding: 3px;
+      border-radius: 5px;
+      margin-right:  10px;
+      cursor: pointer;
+    }
+    .btn_delete:hover {
+      background-color: red;
+      color: white;
+    }
+    
+    .box_albums {
+      display: flex;
+      flex-direction: column; 
+      gap: 10px; 
+    }
+    
+    
+    .box_album {
+      display: flex;
+      flex-direction: column; 
+      width: 100%; 
+    }
+    
+    .box_products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px; 
+      margin-left: 0px; 
+      justify-content: center;
+    }
+    
+    .box_products_2 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px; 
+      margin-left: 0px; 
+      background-color: red;
+      justify-content: space-between;
+    }
+    
+    .box_product {
+      text-align: left;
+      border: 1px solid transparent;
+      width: 150px;
+      overflow: hidden; 
+      white-space: nowrap; 
+      text-overflow: ellipsis; 
+    }
+    
+    .box_product:hover {
+      border: 1px solid black;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.295);
+    }
+    
+    
+    
+    .info_product {
+      font-size: 18px;
+      margin-left: 10px;
+      color: black;
+      overflow: hidden; 
+      white-space: nowrap; 
+      text-overflow: ellipsis; 
+    }
+    
+    .title {
+      overflow: hidden; 
+      white-space: nowrap; 
+      text-overflow: ellipsis; 
+      margin-bottom: -5px;
+    }
+    
+    .link_product {
+      text-decoration: none;
+    }
+    
+    .bellImg {
+      width: 20px;
+    }
+    
+    
+    .bellNotification {
+      position: absolute; 
+      bottom: 10px; 
+      right: 10px; 
+      background-color: white;
+      text-decoration: none;
+      color: black;
+      font-size: 1.3em;
+      border: 1px solid black;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+      cursor: pointer;
+    }
+    
+    .bellNotification:hover {
+      color: white;
+    }
+    
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      20% { transform: translateX(-5px); }
+      40% { transform: translateX(5px); }
+      60% { transform: translateX(-5px); }
+      80% { transform: translateX(5px); }
+      100% { transform: translateX(0); }
+    }
+    
+    .bellNotification img {
+      transition: transform 0.2s ease-in-out;
+    }
+    
+    .bellNotification:hover img {
+      animation: shake 1s ease-in-out;
+    }
+    
+    .notificationsWrapper {
+      position: absolute; 
+      bottom: 10px; 
+      right: 10px; 
+      display: flex;
+      flex-direction: column;  
+    }
+    
+    .notificationBadge {
+      position: absolute;
+      bottom: -2px;
+      right: -2px;
+      background-color: red;
+      color: white;
+      font-size: 1.3em;
+      font-weight: bolder;
+      padding: 2px 2px;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+     
+     .spinner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 4px solid #f3f3f3; 
+      border-top: 4px solid black; 
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      animation: spin 1s linear infinite;
+    }
+    
+    
+    @keyframes spin {
+      0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+      100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+    
+    .iconGear {
+      width: 20px;
+    }
+    
+    @keyframes rotate360x2 {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(720deg); 
+      }
+    }
+    
+    .iconGearButton:hover .iconGear {
+      animation: rotate360x2 1s ease-in-out; 
+    }
+    
+    .iconGearButton {
+      background-color: white;
+      position: absolute; 
+      bottom: 50px; 
+      right: 10px; 
+      cursor: pointer;
+      border: 1px solid black;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 7px;
+    }
+    
+  .boxPrice {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+  }
+  
+  .price {
+    font-size: 1em; 
+  }
+  
+  .priceOriginal {
+    font-size: 0.8em !important; 
+    color: gray;
+    text-decoration: line-through; 
+    margin-right: 10px;
+    margin-bottom: -15px; 
+  }
+  
+  .pricePromotion {
+    font-size: 1em !important; 
+    color: orange; 
+    font-weight: bold;
+  }
+  }
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+   
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  .box_change {
+    background-color: white;
+    color: red;
+  }
+  
+  .sup_buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .back_link {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid black;
+  }
+  
+  .back_link:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .edit_buttons  {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .edit_buttons:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .head_profile {
+    display: flex;
+    position: relative; 
+    
+  }
+  
+  .profileImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .name_info {
+    font-size: 1.5em;
+  }
+  
+  .business_info {
+    margin-left: 10px;
+    height: 100px;  
+  }
+  
+  .business_info p {
+    margin: 5px 0;
+    font-size: 0.8em;
+    line-height: 1.5;
+    color: #000000;
+  }
+  
+  .create-product-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .containerImgProfile {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .containerImgProduct {
+    width: 142px;
+    height: 142px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .imageProduct {
+    width: 142px;
+    height: 142px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  
+  .h2_album {
+    font-size: 1em;
+    color: white;
+    margin-left: 10px;
+    margin: 0;  
+  }
+  
+  .album_title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+    height: 40px;
+    padding-left: 10px;
+  }
+  
+  .btn_change {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    margin-right:  10px;
+    cursor: pointer;
+  }
+  .btn_change:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .btn_delete {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    margin-right:  10px;
+    cursor: pointer;
+  }
+  .btn_delete:hover {
+    background-color: red;
+    color: white;
+  }
+  
+  .box_albums {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+  }
+  
+  
+  .box_album {
+    display: flex;
+    flex-direction: column; 
+    width: 100%; 
+  }
+
+  .box_products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    margin-left: 0px; 
+    
+    justify-content: center;
+  }
+  
+  .box_products_2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    margin-left: 0px; 
+    background-color: red;
+    justify-content: space-between;
+  }
+  
+  .box_product {
+    text-align: left;
+    border: 1px solid transparent;
+    width: 142px;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+  }
+  
+  .box_product:hover {
+    border: 1px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.295);
+  }
+  
+  
+  
+  .info_product {
+    font-size: 18px;
+    margin-left: 10px;
+    color: black;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+  }
+  
+  .title {
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+  }
+  
+  .link_product {
+    text-decoration: none;
+  }
+  
+  .bellImg {
+    width: 20px;
+  }
+  
+  
+  .bellNotification {
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+  }
+  
+  .bellNotification:hover {
+    color: white;
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    60% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .bellNotification img {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .bellNotification:hover img {
+    animation: shake 1s ease-in-out;
+  }
+  
+  .notificationsWrapper {
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+    display: flex;
+    flex-direction: column;  
+  }
+  
+  .notificationBadge {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    background-color: red;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bolder;
+    padding: 2px 2px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+   
+   .spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid #f3f3f3; 
+    border-top: 4px solid black; 
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    animation: spin 1s linear infinite;
+  }
+  
+  
+  @keyframes spin {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
+  .iconGear {
+    width: 20px;
+  }
+  
+  @keyframes rotate360x2 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(720deg); 
+    }
+  }
+  
+  .iconGearButton:hover .iconGear {
+    animation: rotate360x2 1s ease-in-out; 
+  }
+  
+  .iconGearButton {
+    background-color: white;
+    position: absolute; 
+    bottom: 50px; 
+    right: 10px; 
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+  }
+  
+  .boxPrice {
+    display: flex;
+    align-items: center;
+  }
+  
+  .price {
+    font-size: 1em; 
+  }
+  
+  .priceOriginal {
+    font-size: 0.8em !important; 
+    color: gray;
+    text-decoration: line-through; 
+    margin-right: 10px;
+  }
+  
+  .pricePromotion {
+    font-size: 1em; 
+    color: orange; 
+    font-weight: bold;
+  }
+  
+  }
+   
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  .box_change {
+    background-color: white;
+    color: red;
+  }
+  
+  .sup_buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .back_link {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid black;
+  }
+  
+  .back_link:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .edit_buttons  {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .edit_buttons:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .head_profile {
+    display: flex;
+    position: relative; 
+    
+  }
+  
+  .profileImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .name_info {
+    font-size: 1.5em;
+  }
+  
+  .business_info {
+    margin-left: 10px;
+    height: 100px;  
+  }
+  
+  .business_info p {
+    margin: 5px 0;
+    font-size: 0.8em;
+    line-height: 1.5;
+    color: #000000;
+  }
+  
+  .create-product-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .containerImgProfile {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .containerImgProduct {
+    width: 178px;
+    height: 178px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .imageProduct {
+    width: 178px;
+    height: 178px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  
+  .h2_album {
+    font-size: 1em;
+    color: white;
+    margin-left: 10px;
+    margin: 0;  
+  }
+  
+  .album_title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+    height: 40px;
+    padding-left: 10px;
+  }
+  
+  .btn_change {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    margin-right:  10px;
+    cursor: pointer;
+  }
+  .btn_change:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .btn_delete {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    margin-right:  10px;
+    cursor: pointer;
+  }
+  .btn_delete:hover {
+    background-color: red;
+    color: white;
+  }
+  
+  .box_albums {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+  }
+  
+  
+  .box_album {
+    display: flex;
+    flex-direction: column; 
+    width: 100%; 
+  }
+
+  .box_products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    margin-left: 0px; 
+    
+    justify-content: center;
+  }
+  
+  .box_products_2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    margin-left: 0px; 
+    background-color: red;
+    justify-content: space-between;
+  }
+  
+  .box_product {
+    text-align: left;
+    border: 1px solid transparent;
+    width: 178px;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+  }
+  
+  .box_product:hover {
+    border: 1px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.295);
+  }
+  
+  
+  
+  .info_product {
+    font-size: 1em;
+    margin-left: 10px;
+    color: black;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+  }
+  
+  .title {
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+  }
+  
+  .link_product {
+    text-decoration: none;
+  }
+  
+  .bellImg {
+    width: 20px;
+  }
+  
+  
+  .bellNotification {
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+  }
+  
+  .bellNotification:hover {
+    color: white;
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    60% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .bellNotification img {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .bellNotification:hover img {
+    animation: shake 1s ease-in-out;
+  }
+  
+  .notificationsWrapper {
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+    display: flex;
+    flex-direction: column;  
+  }
+  
+  .notificationBadge {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    background-color: red;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bolder;
+    padding: 2px 2px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+   
+   .spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid #f3f3f3; 
+    border-top: 4px solid black; 
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    animation: spin 1s linear infinite;
+  }
+  
+  
+  @keyframes spin {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
+  .iconGear {
+    width: 20px;
+  }
+  
+  @keyframes rotate360x2 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(720deg); 
+    }
+  }
+  
+  .iconGearButton:hover .iconGear {
+    animation: rotate360x2 1s ease-in-out; 
+  }
+  
+  .iconGearButton {
+    background-color: white;
+    position: absolute; 
+    bottom: 50px; 
+    right: 10px; 
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+  }
+  
+  .boxPrice {
+    display: flex;
+    align-items: center;
+  }
+  
+  .price {
+    font-size: 1em; 
+  }
+  
+  .priceOriginal {
+    font-size: 0.8em !important; 
+    color: gray;
+    text-decoration: line-through; 
+    margin-right: 10px;
+  }
+  
+  .pricePromotion {
+    font-size: 1em; 
+    color: orange; 
+    font-weight: bold;
+  }
+  
+  }
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+
+  
+  
+  }
+  
+  @media (min-width: 1281px) and (max-width: 1440px) {
+
+  
+  }
+  
+  @media (min-width: 1441px) and (max-width: 1920px) {
+ 
+  }
+  
+  @media (min-width: 1921px) {
+    
+  }
+  

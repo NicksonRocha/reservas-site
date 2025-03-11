@@ -1,0 +1,745 @@
+.tabletsAndMobiles {
+  display: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.formticket {
+  display: flex;
+  flex-direction: column;
+}
+
+.ageticket {
+  border: 0.5px solid rgba(109, 109, 109, 0.301);
+  border-radius: 5px;
+  width: 545px;
+  height: 35px;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  padding-left: 10px;
+}
+
+.codigo {
+  margin-bottom: 15px;
+}
+
+.numberTicket {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+
+}
+
+.box_info {
+    width: 550px;
+    margin-top: 5px;
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+.box_image {
+    width: 350px;
+    
+  }
+
+ 
+  .sliderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 350px;
+    height: 350px;
+  }
+
+   
+   .sliderImage {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  
+  .sliderButton {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .sliderButton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  
+  .sliderButton:first-of-type {
+    left: 10px;
+  }
+  
+  
+  .sliderButton:last-of-type {
+    right: 10px;
+  }
+
+  .btns {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  
+  
+  .btns:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+    
+  }
+
+.box {
+  display: flex;
+  width: 100%;
+  
+}
+
+.boxHalf {
+  flex: 1; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: flex-start;   
+  font-weight: bold;
+}
+
+.boxHalf2 {
+  flex: 1; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  
+  
+}
+
+.formInner label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+
+.formInner input[type="text"],
+.formInner input[type="email"],
+.formInner input[type="date"],
+.formInner select {
+  margin-top: 6px;      
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 0.95em;
+  outline: none;
+  transition: border 0.2s;
+}
+
+  
+
+ @media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    display: none;
+  }
+
+  .tabletsAndMobiles {
+    display: inline;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    width: 90%;  
+    padding: 10px;
+  }
+
+  .tmInfo {
+    width: 100%;    
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    
+  }
+ .tmLeft {
+    white-space: normal;
+    word-wrap: break-word; 
+  margin-left: 8px;
+  }
+  .tmRight {
+    margin-right: 8px;
+    font-size: 0.9em;
+  }
+  
+   .sliderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 150px;
+    height: 150px;
+  }
+
+  
+  .sliderImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+  }
+
+   
+   .sliderButton {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8em;
+  }
+  
+  .sliderButton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  
+  .sliderButton:first-of-type {
+    left: 5px;
+  }
+  
+  
+  .sliderButton:last-of-type {
+    right: 5px;
+  }
+
+
+  .box_info {
+    width: 80%;
+  }
+
+  .btnsWhite {
+    
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.6em;
+    font-weight: 400;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom:5px;
+  }
+
+  
+  
+  .btnsWhite:hover {
+    background-color: black;
+    color: white;
+    border-color: black;
+    
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    display: none;
+  }
+
+  .tabletsAndMobiles {
+    display: inline;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 90%;  
+    padding: 20px;
+  }
+
+  .tmInfo {
+    width: 100%;    
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    
+  }
+ .tmLeft {
+    white-space: normal;
+    word-wrap: break-word; 
+  margin-left: 15px;
+  }
+  .tmRight {
+    margin-right: 15px;
+    font-size: 0.9em;
+  }
+  
+   .sliderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    font-size: 0.6em;
+  }
+
+  
+  .sliderImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  
+    
+    .sliderButton {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 5px;
+      cursor: pointer;
+      font-size: 10px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.6em;
+    }
+    
+    .sliderButton:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    
+    .sliderButton:first-of-type {
+      left: 5px;
+    }
+    
+    
+    .sliderButton:last-of-type {
+      right: 5px;
+    }
+
+  .box_info {
+    width: 80%;
+  }
+
+  .btnsWhite {
+    
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.6em;
+    font-weight: 400;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom:5px;
+  }
+
+  
+  
+  .btnsWhite:hover {
+    background-color: black;
+    color: white;
+    border-color: black;
+    
+  }
+
+
+
+}
+ 
+@media (min-width: 768px) and (max-width: 1024px) {
+   
+   .container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  
+  .formticket {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ageticket {
+    border: 0.5px solid rgba(109, 109, 109, 0.301);
+    border-radius: 5px;
+    width: 545px;
+    height: 35px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    padding-left: 10px;
+  }
+  
+  .codigo {
+    margin-bottom: 15px;
+  }
+  
+  .numberTicket {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+  
+  }
+  
+  .box_info {
+      width: 550px;
+      margin-top: 5px;
+      text-align: left;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+  
+  .box_image {
+      max-width: 250px;
+      width: 100%;
+      white-space: normal;
+      word-wrap: break-word; 
+    }
+  
+   
+    .sliderContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 250px;
+      height: 250px;
+    }
+  
+     
+     .sliderImage {
+      width: 250px;
+      height: 250px;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: transform 0.5s ease-in-out;
+    }
+    
+    
+    
+    .sliderButton {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    
+    .sliderButton:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    
+    .sliderButton:first-of-type {
+      left: 10px;
+    }
+    
+    
+    .sliderButton:last-of-type {
+      right: 10px;
+    }
+  
+    .btns {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      border: 2px solid transparent;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1em;
+      font-weight: 400;
+      text-decoration: none;
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+  
+    
+    
+    .btns:hover {
+      background-color: white;
+      color: black;
+      border-color: black;
+      
+    }
+  
+  .box {
+    display: flex;
+    width: 100%;
+    
+  }
+  
+  .boxHalf {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    
+    font-weight: bold;
+  }
+  
+  .boxHalf2 {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    
+    
+  }
+  
+
+  .formInner label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+  
+  
+  .formInner input[type="text"],
+  .formInner input[type="email"],
+  .formInner input[type="date"],
+  .formInner select {
+    margin-top: 6px;      
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 0.95em;
+    outline: none;
+    transition: border 0.2s;
+  }
+  
+
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  
+  .formticket {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ageticket {
+    border: 0.5px solid rgba(109, 109, 109, 0.301);
+    border-radius: 5px;
+    width: 545px;
+    height: 35px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    padding-left: 10px;
+  }
+  
+  .codigo {
+    margin-bottom: 15px;
+  }
+  
+  .numberTicket {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+  
+  }
+  
+  .box_info {
+      width: 550px;
+      margin-top: 5px;
+      text-align: left;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+  
+  .box_image {
+      width: 350px;
+      
+    }
+  
+   
+    .sliderContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 350px;
+      height: 350px;
+    }
+  
+     
+     .sliderImage {
+      width: 350px;
+      height: 350px;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: transform 0.5s ease-in-out;
+    }
+    
+    
+    .sliderButton {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    
+    .sliderButton:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    
+    .sliderButton:first-of-type {
+      left: 10px;
+    }
+    
+    
+    .sliderButton:last-of-type {
+      right: 10px;
+    }
+  
+    .btns {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      border: 2px solid transparent;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1em;
+      font-weight: 400;
+      text-decoration: none;
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+  
+    
+    
+    .btns:hover {
+      background-color: white;
+      color: black;
+      border-color: black;
+      
+    }
+  
+  .box {
+    display: flex;
+    width: 100%;
+    
+  }
+  
+  .boxHalf {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    
+    font-weight: bold;
+  }
+  
+  .boxHalf2 {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    
+    
+  }
+  
+
+  .formInner label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+  
+  
+  .formInner input[type="text"],
+  .formInner input[type="email"],
+  .formInner input[type="date"],
+  .formInner select {
+    margin-top: 6px;      
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 0.95em;
+    outline: none;
+    transition: border 0.2s;
+  }
+  
+}
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+
+
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+}
+
+@media (min-width: 1921px) {
+}

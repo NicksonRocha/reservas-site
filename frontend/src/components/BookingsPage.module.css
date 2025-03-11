@@ -1,0 +1,1277 @@
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .containerSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .leftSide {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(252, 119, 119, 0.1);
+    
+  }
+
+  .leftSideImg {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+  }
+
+  .rightSide {
+    flex: 1;
+    background-color: #ffffff;
+    padding-left: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .rightSideInfo {
+    flex: 1;
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .title {
+    font-size: 1.2em;
+    margin: 10px;
+    text-align: left; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+}
+
+.description {
+  overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    
+    margin: 10px;
+}
+
+.duration {
+  
+  margin: 10px;
+}
+
+.price {
+  
+  margin: 10px;
+}
+  
+  .sliderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 300px;
+  }
+
+  .sliderImage {    
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+  }
+
+
+  .sliderButton {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .sliderButton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .sliderButton:first-of-type {
+    left: 10px;
+  }
+  
+  .sliderButton:last-of-type {
+    right: 10px;
+  }
+  
+  
+  
+  .imageProduct {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .options {
+    width: 90%;
+    margin: auto;
+  }
+
+  .hoursOptions {
+    width: 90%;
+    margin: auto;
+  }
+  
+  .select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .calendarContainer {
+    display: grid;
+    place-items: center; 
+    padding: 20px;
+}
+
+.calendar {
+    width: 320px; 
+    max-width: 100%;
+}
+  
+  
+.box_booking {
+  position: relative;
+  background-color: white;
+  border: 4px solid black;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+  
+  .booking_info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .booking_info strong {
+    color: black;
+  }
+  
+  .loading,
+  .error,
+  .no_results {
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .no_results {
+    font-weight: bold;
+  }
+
+.dateBefore {
+  background-color: navy;
+  color: white;
+}
+
+.dateNext {
+  background-color: turquoise;
+  color: black;
+}
+
+.btns {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 400;
+  text-decoration: none;
+  margin-bottom: 20px;
+  
+}
+
+.btns:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+  
+}
+
+.div_button {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin: 20px;
+}
+
+  
+   .calendar .selectedDate {
+    background-color: limegreen !important; 
+    color: white;
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .deleteButton {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  
+  .deleteButton:hover {
+    background-color: white;
+    color: red;
+    border-color: red;
+  }
+  .modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .confirmButton {
+    background: #ff0800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .cancelButton {
+    background: #69dcff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .confirmButton:hover, .cancelButton:hover {
+    opacity: 0.8;
+  }
+
+  .spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid #f3f3f3; 
+    border-top: 4px solid black; 
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+ 
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .containerSearch {
+    width: 90%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: none;
+  }
+  
+  .leftSide {
+    flex: 1;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(252, 119, 119, 0.1);
+  }
+
+  .leftSideImg {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    width:142px;
+    height:142px;
+  }
+
+  .rightSide {
+    flex: 2;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(252, 119, 119, 0.1);
+    margin-bottom: 20px
+  }
+
+  .rightSideInfo {
+    flex: 2;    
+    width: 142px;
+    height: 142px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .title {
+    font-size: 1em;
+    margin: 10px;
+    text-align: left; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+}
+
+.description {
+  overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+}
+  
+  .sliderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 142px;
+  }
+
+  .sliderImage {    
+    width: 142px;
+    height: 142px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+  }
+
+
+  .sliderButton {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .sliderButton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .sliderButton:first-of-type {
+    left: 10px;
+  }
+  
+  .sliderButton:last-of-type {
+    right: 10px;
+  }
+  
+  .imageProduct {
+    width: 142px;
+    height: 142px;
+    object-fit: cover;
+  }
+  
+  .select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .calendarContainer {
+    display: grid;
+    place-items: center; 
+    padding: 20px;
+}
+
+.calendar {
+    width: 300px; 
+    max-width: 100%;
+}
+  
+  
+.box_booking {
+  position: relative; 
+  background-color: white;
+  border: 4px solid black;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+  
+  .booking_info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .booking_info strong {
+    color: black;
+  }
+  
+  .loading,
+  .error,
+  .no_results {
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .no_results {
+    font-weight: bold;
+  }
+
+.dateBefore {
+  background-color: navy; 
+  color: white;
+}
+
+.dateNext {
+  background-color: turquoise; 
+  color: black;
+}
+
+.btns {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 400;
+  text-decoration: none;
+  margin-bottom: 20px;
+  
+}
+
+.btns:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+  
+}
+
+.div_button {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin: 20px;
+}
+
+  
+   .calendar .selectedDate {
+    background-color: limegreen !important; 
+    color: white; 
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .containerSearch {
+    width: 90%;
+    margin-bottom: 20px;
+
+    margin-top: 20px;
+    padding: none;
+  }
+  
+  .leftSide {
+    flex: 1;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(252, 119, 119, 0.1);
+  }
+
+  .leftSideImg {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    width:180px;
+    height:180px;
+  }
+
+  .rightSide {
+    flex: 2;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(252, 119, 119, 0.1);
+    margin-bottom: 20px
+  }
+
+  .rightSideInfo {
+    flex: 2;    
+    width: 180px;
+    height: 180px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .title {
+    font-size: 1em;
+    margin: 10px;
+    text-align: left; 
+    overflow: hidden; 
+    white-space: nowrap; /* Evita quebra de linha */
+    text-overflow: ellipsis; /* Adiciona os três pontinhos */
+}
+
+.description {
+  overflow: hidden; 
+    white-space: nowrap; /* Evita quebra de linha */
+    text-overflow: ellipsis; /* Adiciona os três pontinhos */
+}
+  
+  .sliderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 180px;
+  }
+
+  .sliderImage {    
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+  }
+
+
+  .sliderButton {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .sliderButton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Botão esquerdo */
+  .sliderButton:first-of-type {
+    left: 10px;
+  }
+  
+  /* Botão direito */
+  .sliderButton:last-of-type {
+    right: 10px;
+  }
+  
+  
+  
+  .imageProduct {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+
+  
+  .select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .calendarContainer {
+    display: grid;
+    place-items: center; 
+    padding: 20px;
+}
+
+.calendar {
+    width: 320px; /* Ajuste o tamanho do calendário */
+    max-width: 100%;
+}
+  
+  
+.box_booking {
+  position: relative; /* Define o container como referência para posicionamento absoluto */
+  background-color: white;
+  border: 4px solid black;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+  
+  .booking_info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .booking_info strong {
+    color: black;
+  }
+  
+  /* Mensagens de erro e carregamento */
+  .loading,
+  .error,
+  .no_results {
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .no_results {
+    font-weight: bold;
+  }
+
+
+
+  /* Datas antes da data atual */
+.dateBefore {
+  background-color: navy; /* Azul marinho */
+  color: white;
+  /* Deixa o dia em formato circular */
+}
+
+/* Datas a partir da data atual */
+.dateNext {
+  background-color: turquoise; /* Azul turquesa */
+  color: black;
+   /* Deixa o dia em formato circular */
+}
+
+.btns {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 400;
+  text-decoration: none;
+  margin-bottom: 20px;
+  
+}
+
+.btns:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+  
+}
+
+.div_button {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente (opcional) */
+  margin: 20px;
+}
+
+  
+   .calendar .selectedDate {
+    background-color: limegreen !important; /* Cor de destaque para a data selecionada */
+    color: white; /* Cor do texto */
+  }
+
+}
+ 
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Estilos para tablets -25%*/
+/* Container principal */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  gap: 20px;
+}
+
+.containerSearch {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Lado esquerdo: informações do produto */
+.leftSide {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(252, 119, 119, 0.1);
+}
+
+.leftSideImg {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+/* Lado direito: lista de reservas */
+.rightSide {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rightSideInfo {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 2px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 150px;
+  height: 150px;
+}
+
+.title {
+  font-size: 1em;
+  margin: 0px;
+  text-align: left; 
+  overflow: hidden; 
+  white-space: nowrap; /* Evita quebra de linha */
+  text-overflow: ellipsis; /* Adiciona os três pontinhos */
+}
+
+.description {
+overflow: hidden; 
+  white-space: nowrap; /* Evita quebra de linha */
+  text-overflow: ellipsis; /* Adiciona os três pontinhos */
+}
+
+.price {
+  font-size: 0.9em;
+}
+
+.sliderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 150px;
+}
+
+.sliderImage {    
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.sliderButton {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sliderButton:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Botão esquerdo */
+.sliderButton:first-of-type {
+  left: 5px;
+}
+
+/* Botão direito */
+.sliderButton:last-of-type {
+  right: 5px;
+}
+
+
+
+.imageProduct {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.calendarContainer {
+  display: grid;
+  place-items: center; 
+  padding: 20px;
+}
+
+.calendar {
+  width: 320px; /* Ajuste o tamanho do calendário */
+  max-width: 100%;
+}
+
+
+.box_booking {
+position: relative; /* Define o container como referência para posicionamento absoluto */
+background-color: white;
+border: 4px solid black;
+margin-bottom: 15px;
+padding: 10px;
+border-radius: 4px;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+.booking_info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.booking_info strong {
+  color: black;
+}
+
+/* Mensagens de erro e carregamento */
+.loading,
+.error,
+.no_results {
+  text-align: center;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.error {
+  color: red;
+}
+
+.no_results {
+  font-weight: bold;
+}
+
+
+
+/* Datas antes da data atual */
+.dateBefore {
+background-color: navy; /* Azul marinho */
+color: white;
+/* Deixa o dia em formato circular */
+}
+
+/* Datas a partir da data atual */
+.dateNext {
+background-color: turquoise; /* Azul turquesa */
+color: black;
+ /* Deixa o dia em formato circular */
+}
+
+.btns {
+background-color: black;
+color: white;
+padding: 10px;
+border: 2px solid transparent;
+border-radius: 10px;
+cursor: pointer;
+font-size: 1em;
+font-weight: 400;
+text-decoration: none;
+margin-bottom: 20px;
+
+}
+
+.btns:hover {
+background-color: white;
+color: black;
+border-color: black;
+
+}
+
+.div_button {
+display: flex;
+justify-content: center; /* Centraliza horizontalmente */
+align-items: center; /* Centraliza verticalmente (opcional) */
+margin: 20px;
+}
+
+
+ .calendar .selectedDate {
+  background-color: limegreen !important; /* Cor de destaque para a data selecionada */
+  color: white; /* Cor do texto */
+}
+
+
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* Estilos para laptops e desktops menores */
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    gap: 20px;
+  }
+
+  .containerSearch {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    font-family: Arial, sans-serif;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Lado esquerdo: informações do produto */
+  .leftSide {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(252, 119, 119, 0.1);
+  }
+
+  .leftSideImg {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 250px;
+    height: 250px;
+  }
+
+  /* Lado direito: lista de reservas */
+  .rightSide {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .rightSideInfo {
+    flex: 1;
+    height: 250px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+  }
+
+  .title {
+    font-size: 1.2em;
+    margin: 0px;
+    text-align: left; 
+    overflow: hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+}
+
+.description {
+  overflow: hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+}
+  
+  .sliderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 250px;
+  }
+
+  .sliderImage {    
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+  }
+
+
+  .sliderButton {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .sliderButton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Botão esquerdo */
+  .sliderButton:first-of-type {
+    left: 10px;
+  }
+  
+  /* Botão direito */
+  .sliderButton:last-of-type {
+    right: 10px;
+  }
+  
+  
+  
+  .imageProduct {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .calendarContainer {
+    display: grid;
+    place-items: center; 
+    padding: 20px;
+}
+
+.calendar {
+    width: 320px; 
+    max-width: 100%;
+}
+  
+  
+.box_booking {
+  position: relative; 
+  background-color: white;
+  border: 4px solid black;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+  
+  .booking_info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .booking_info strong {
+    color: black;
+  }
+  
+  .loading,
+  .error,
+  .no_results {
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .no_results {
+    font-weight: bold;
+  }
+
+.dateBefore {
+  background-color: navy; 
+  color: white;
+}
+
+.dateNext {
+  background-color: turquoise; 
+  color: black;
+}
+
+.btns {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 400;
+  text-decoration: none;
+  margin-bottom: 20px;
+  
+}
+
+.btns:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+  
+}
+
+.div_button {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin: 20px;
+}
+
+  
+   .calendar .selectedDate {
+    background-color: limegreen !important; 
+    color: white; 
+  }
+  
+
+}
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+
+}
+
+@media (min-width: 1921px) {
+
+}
+

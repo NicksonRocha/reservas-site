@@ -1,0 +1,622 @@
+
+.bar {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+  }
+  
+.bar div {
+    display: flex;
+    align-items: center;
+  }
+
+  .auth {
+    margin-right: 10px;
+  }
+
+  .brand {
+    width: 130px;
+    height: 52px;
+  }
+  
+  .form {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  .search {
+    width: 300px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+    margin-right: 10px;
+  }
+
+  .iconProfile {
+    display: none;
+    width: 26px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .buscar {
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1.3em;
+  }
+  
+  .buscar:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .linkBookings {
+    margin-left: 20px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+  }
+
+  .linkBookings:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  
+  .link {
+    margin-left: 20px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+  }
+  
+  .link:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+
+  .iconCalendar {
+    display: none;
+    width: 30px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .iconCalendar:hover{
+    animation: shake 1s ease-in-out;
+  }
+
+  .iconSearch {
+    display: none;   
+    color: white;
+    border: 1px solid transparent;    
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .iconSearch:hover img{
+    animation: shake 1s ease-in-out;
+  }
+
+  .imgBellNotification {
+    width: 30px;
+  }
+
+  .bellNotification {
+    margin-left: 20px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;    
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+  }
+  
+  .bellNotification:hover {
+    color: white;
+  }
+  
+  .notificationsWrapper {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .notificationBadge {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bolder;
+    padding: 2px 2px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    60% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .bellNotification img {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .bellNotification:hover img {
+    animation: shake 1s ease-in-out;
+  }
+  
+  /* PARTE NOVA */
+
+  .menuToggle {    
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    
+  }
+
+  .menuToggle:hover {
+    animation: shake 1s ease-in-out;
+  }
+
+  
+
+  .iconMenu {
+    width: 30px;
+  }
+  
+  .menuLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 0; 
+    position: absolute;
+    top: 70px; 
+    right: 0px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0; 
+    border-radius: 5px;
+    z-index: 1000; 
+    overflow: hidden;
+  }
+  
+  .linkToggle {
+    text-decoration: none;
+    width: 100%;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    background-color: white;
+    border-bottom: 1px solid black;
+    font-weight: 600;
+    text-align: center; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+
+  .linkToggle:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .linkToggle:last-child {
+    border-bottom: none; 
+  }
+  
+  .linkQuit {
+    text-decoration: none;
+    width: 100%;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s; 
+    text-align: center; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .linkQuit:hover {
+    background-color: red;
+    color: white;
+  }
+ 
+
+ 
+  
+    @media (min-width: 320px) and (max-width: 480px) {
+       
+      .bar {
+        height: 30px;
+        padding: 6px 12px;
+        width: 100%;
+      }
+
+      .brand {
+        width: 78px;
+        height: 32px;
+      }  
+
+      .search {
+        width: 100px;
+        height: 26px;
+        padding: 4px;
+        border: 1px solid black;
+        border-radius: 6px;
+        margin-right: 6px;
+        margin-left: 10px;
+      }
+      
+      .buscar {
+       display: none;
+      }   
+
+      .iconProfile {
+        display: inline;
+        width: 26px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+
+      .link {
+        display: none;     
+      }    
+      
+      .imgBellNotification {
+        width: 26px;
+      }
+    
+      .bellNotification {
+        margin-left: 10px;        
+        font-size: 0.8em;            
+      }    
+
+      .notificationBadge {
+        position: absolute;
+        bottom: -1px;
+        right: -1px;        
+        font-size: 0.8em;
+        font-weight: 400;
+        padding: 2px 2px;
+        border-radius: 50%;
+        height: 12px;
+        width: 12px;
+      }
+
+      .linkBookings {
+        display: none;          
+      }
+
+      
+
+      .iconCalendar {
+        display: inline;
+        width: 26px;
+        border: 1px solid transparent;
+      }
+
+      .iconSearch {
+        display: inline;  
+        background-color: white;  
+        height: 24px;            
+        padding: 2px 2px;
+        font-size: 1em;    
+      }
+
+      .iconSearchImg {        
+        width:20px;
+      }
+
+      .iconMenu {
+        width:24px;
+      }
+
+      .menuLinks {        
+        top: 42px; 
+        right: 0px;       
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 0;
+        border-radius: 5px; 
+      }
+    }
+  
+    @media (min-width: 481px) and (max-width: 767px) {
+
+      .bar {
+        height: 30px;
+        padding: 6px 12px;
+      }
+
+      .brand {
+        width: 78px;
+        height: 32px;
+        margin-right: 10px;
+      }  
+
+      .search {
+        width: 180px;
+        height: 26px;
+        padding: 4px;
+        border: 1px solid black;
+        border-radius: 6px;
+        margin-right: 6px;
+      }
+      
+      .buscar {
+       display: none;
+      }   
+
+      .link {
+        margin-left: 10px;        
+        font-size: 1em;
+        padding: 3px 6px;
+        border: 1px solid transparent;
+        border-radius: 4px !important;        
+      }    
+      
+      .imgBellNotification {
+        width: 26px;
+      }
+    
+      .bellNotification {
+        margin-left: 10px;        
+        font-size: 0.8em;            
+      }    
+
+      .notificationBadge {
+        position: absolute;
+        bottom: -1px;
+        right: -1px;        
+        font-size: 0.8em;
+        font-weight: 400;
+        padding: 2px 2px;
+        border-radius: 50%;
+        height: 12px;
+        width: 12px;
+      }
+
+      .linkBookings {
+        display: none;          
+      }
+
+      
+
+      .iconCalendar {
+        display: inline;
+        width: 26px;
+        border: 1px solid transparent;
+      }
+
+      .iconSearch {
+        display: inline;  
+        background-color: white;  
+        height: 24px;            
+        padding: 2px 2px;
+        font-size: 1em;    
+      }
+
+      .iconSearchImg {        
+        width:20px;
+      }
+
+      .iconMenu {
+        width:24px;
+      }
+
+      .menuLinks {        
+        top: 42px; 
+        right: 0px;       
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 0; 
+        border-radius: 5px;          
+      }
+
+    }
+  
+    @media (min-width: 768px) and (max-width: 1024px) {
+
+      .bar {
+        height: 37px;
+        padding: 8px 15px;
+      }
+    
+      .brand {
+        width: 97px;
+        height: 39px;
+       
+      }     
+      
+      
+      
+      .search {
+        width: 225px;
+        height: 30px;
+        padding: 5px;
+        border: 1px solid black;
+        border-radius: 8px;
+        margin-right: 8px;
+      }
+      
+      .buscar {
+        height: 30px;      
+        border: 1px solid black;
+        border-radius: 8px;
+        padding: 4px 10px;
+        font-size: 1em;
+      }      
+
+      
+      .link {
+        margin-left: 15px;        
+        font-size: 1em;
+        padding: 4px 10px;
+        border: 1px solid transparent;
+        border-radius: 8px;    
+      }     
+      
+      .linkBookings {
+        margin-left: 15px;        
+        font-size: 1em;
+        padding: 4px 10px;
+        border: 1px solid transparent;
+        border-radius: 8px;          
+      }
+
+      .imgBellNotification {
+        width: 26px;
+      }
+    
+      .bellNotification {
+        margin-left: 15px;        
+        font-size: 1em;            
+      }               
+      
+      .notificationBadge {
+        position: absolute;
+        bottom: -2px;
+        right: -2px;        
+        font-size: 1em;
+        font-weight: bold;
+        padding: 3px 3px;
+        border-radius: 50%;
+        height: 14px;
+        width: 14px;
+      }
+
+      /* PARTE NOVA */
+    
+      .menuToggle {    
+        
+        font-size: 16px;
+        margin-left: 10px;
+        
+      }
+    
+      
+    
+      .iconMenu {
+        width: 24px;
+      }
+      
+      .menuLinks {        
+        top: 52px; 
+        right: 0px;       
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 0; 
+        border-radius: 5px;    
+            
+      }
+      
+      .linkToggle {
+        text-decoration: none;
+        width: 100%;
+        color: black;
+        padding: 10px;
+        font-size: 16px;
+        background-color: white;
+        border-bottom: 1px solid black; 
+        font-weight: 600;
+        text-align: center; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+      }
+    
+      .linkToggle:hover {
+        background-color: black;
+        color: white;
+      }
+      
+      .linkToggle:last-child {
+        border-bottom: none; 
+      }
+      
+      .linkQuit {
+        text-decoration: none;
+        width: 100%;
+        color: black;
+        padding: 10px;
+        font-size: 16px;
+        background-color: white;
+        transition: background-color 0.3s, color 0.3s; 
+        text-align: center; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+      }
+      
+      .linkQuit:hover {
+        background-color: red;
+        color: white;
+      }
+
+
+    }
+  
+    @media (min-width: 1025px) and (max-width: 1280px) {
+     
+
+    }
+  
+    @media (min-width: 1281px) and (max-width: 1440px) {
+     
+    }
+  
+    @media (min-width: 1441px) and (max-width: 1920px) {
+      
+    }
+  
+    @media (min-width: 1921px) {
+     
+    }
+
+  
+  

@@ -1,0 +1,279 @@
+.container {
+  padding: 20px;
+}
+
+.smallerScreens {
+  display: none;
+}
+
+.productInfo {
+  margin-bottom: 20px;
+}
+
+.optionsContainer {
+  width: 100%;;
+  margin-top: 20px;
+}
+
+.optionBox {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.optionDetails {
+  min-width: 800px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.optionDetails:last-child {
+  border-bottom: none;
+}
+
+.optionDetails p {
+  margin: 5px 0;
+}
+
+.btn_edit {
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.btn_edit:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+.btn_delete {
+  background-color: red;
+  color: white;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.btn_delete:hover {
+  background-color: white;
+  border: 0.5px solid red;
+  color: red;
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.deleteButton {
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.deleteButton:hover {
+  background-color: white;
+  color: red;
+  border-color: red;
+}
+
+
+.confirmButton {
+  background: #ff0800;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.cancelButton {
+  background: #69dcff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.confirmButton:hover, .cancelButton:hover {
+  opacity: 0.8;
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputsTRINGS {
+  width: 300px !important;
+  height: 30px !important;
+}
+
+.hoursGroup {
+  display: flex;
+  margin: auto;
+  gap: 30px;
+}
+
+
+  
+ /* Media Queries */
+ @media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    display: none;
+  }
+
+  .smallerScreens {
+    display: inline;
+  }
+
+  .sOptionGridBox {
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .sOptionDetails {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .sBoxButtons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    display: none;
+  }
+
+  .smallerScreens {
+    display: inline;
+  }
+
+  .sOptionGridBox {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .sOptionDetails {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .sBoxButtons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+}
+ 
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .container {
+    display: none;
+  }
+
+  .smallerScreens {
+    display: inline;
+  }
+
+  .sOptionGridBox {
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .sOptionDetails {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .sBoxButtons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+
+
+}
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+  
+
+  
+
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+ 
+}
+
+@media (min-width: 1921px) {
+ 
+}
+
+

@@ -1,0 +1,500 @@
+.ticket {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: Arial, sans-serif;
+    height: 200px;
+    width: 600px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.textTitle {
+    margin-left: 50px;
+}
+
+.imageProduct {
+    width: 200px;
+    height: 200px;
+    border-radius: 7px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.box_image {
+    flex: 1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(252, 119, 119, 0.1);
+    width: 200px;
+    height: 200px;
+}
+
+.box_mini_info {
+    flex: 2;
+    overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
+  height: 200px;
+}
+
+.invalidTicket {
+    background-color: rgba(218, 218, 218, 0.466);
+}
+
+.fechar {
+    cursor: pointer;
+    position: absolute; 
+    top: 0px;
+    right: 5px; 
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold; 
+    color: white; 
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.fechar:hover {
+    background-color: white;
+    color: red;
+}
+
+.cancelButton {
+    color: white; 
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.cancelButton:hover {
+    background-color: white;
+    color: red;
+}
+
+.miniModalContent {
+  display: none;
+}
+
+.modal {    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: auto !important;
+  }
+
+  .modalContent {
+    display: flex;
+    justify-content: space-evenly;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+  }
+
+  .boxModalLeft {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .box_image_modal {        
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(252, 119, 119, 0.1);
+    width: 200px;
+    height: 200px;
+    
+}
+
+.box_qr_code {
+  margin-top: 20px;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.qrCodeImage {
+  width: 200px;
+  height: 200px;
+}
+
+  .box_info_modal {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; 
+    text-align: left; 
+    padding: 10px;
+    position: relative; 
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContentCancel {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1200; 
+  }
+
+  .confirmButton {
+    background: #ff0800;
+    color: white;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .confirmButton:hover {
+    background-color: white;
+    color: red;
+  }
+  
+  .cancelCancelButton {
+    background: #69dcff;
+    color: white;
+    border: 1px solid #69dcff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .cancelCancelButton:hover {
+    background-color: white;
+    color: #69dcff;
+  }
+
+  .without_bookings {
+    padding: 200px;
+    background-color: rgb(0, 247, 255);
+    color: white;
+  }
+  
+ .spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid #f3f3f3; 
+  border-top: 4px solid black; 
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+ @media (min-width: 320px) and (max-width: 480px) {
+
+  .modalContent {
+    display: none;
+  }
+
+  .fechar {
+    position: absolute;
+    top: 5px;
+    right: 5px; 
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+  .miniModalContent {
+    display: inline;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    overflow-y: auto; 
+    max-height: 80vh; 
+    padding-top: 20px;
+    position: relative;
+  }
+
+  .mini_box_head{
+    display: flex;
+    gap: 10px;
+  }
+
+  .ticket {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: Arial, sans-serif;
+    height: 125px;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.qrCodeImage {
+  width: 300px;
+  height: 300px;
+}
+
+.textTitle {
+    margin-left: 50px;
+}
+
+.imageProduct {
+    width: 125px;
+    height: 125px;
+    border-radius: 7px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.box_image {
+    flex: 1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(252, 119, 119, 0.1);
+    width: 125px;
+    height: 125px;
+}
+
+.box_mini_info {
+    flex: 2;
+    overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
+  font-size: 0.8em;
+  height: 125px;
+}
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+
+  .ticket {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: Arial, sans-serif;
+    height: 150px;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.textTitle {
+    margin-left: 50px;
+}
+
+.imageProduct {
+    width: 150px;
+    height: 150px;
+    border-radius: 7px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.box_image {
+    flex: 1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(252, 119, 119, 0.1);
+    width: 150px;
+    height: 150px;
+}
+
+.box_mini_info {
+    flex: 2;
+    overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
+  font-size: 0.8em;
+  height: 150px;
+}
+
+.invalidTicket {
+    background-color: rgba(218, 218, 218, 0.466);
+}
+
+.fechar {
+    cursor: pointer;
+    position: absolute; 
+    top: 0px; 
+    right: 5px; 
+    background: none;
+    border: none; 
+    font-size: 18px;
+    font-weight: bold; 
+    color: white; 
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.fechar:hover {
+    background-color: white;
+    color: red;
+}
+
+.cancelButton {
+    color: white; 
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.cancelButton:hover {
+    background-color: white;
+    color: red;
+}
+
+
+.modal {    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: auto !important;
+  }
+
+  .modalContent {
+    display: flex;
+    justify-content: space-evenly;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+  }
+
+  .boxModalLeft {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .box_image_modal {        
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(252, 119, 119, 0.1);
+    width: 200px;
+    height: 200px;
+    
+}
+
+.box_qr_code {
+  margin-top: 20px;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.qrCodeImage {
+  width: 200px;
+  height: 200px;
+}
+
+  .box_info_modal {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; 
+    text-align: left; 
+    padding: 10px;
+    position: relative; 
+}
+
+
+
+}
+ 
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+ 
+}
+
+@media (min-width: 1921px) {
+  
+}
+
+
+
